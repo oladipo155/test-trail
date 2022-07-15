@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Html Tables</title>
+	<style type="text/css">
+		table.first, table.first th, table.first td{
+			border: 1px solid black;
+		}
+
+		table.second, table.second td{
+			border: 1px solid black;
+			border-collapse: collapse;
+			background: #96d4d4;
+			border-radius: 10px;
+		}
+
+		table.third, table.second{
+			text-align: center;
+		}
+
+		table.second td{
+			border: 1px solid black;
+		}
+
+		table.third, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+			border-radius: 10px;
+
+		}
+		table.third tr.green {
+			background-color: green;
+		}
+
+		table.third tr:nth-child(even){
+			background-color: pink;
+		}
+		table.third td:nth-child(even){
+			background-color: pink;
+		}
+
+		table.third th:nth-child(even){
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<table class=first>
+		<tr>
+			<th>Matric</th>
+			<td>001</td>
+			<td>002</td>
+			<td>003</td>
+			<td>004</td>
+		</tr>
+
+		<tr>
+			<th>Names</th>
+			<td>Ezekiel</td>
+			<td>Emmanuel</td>
+			<td>Oladipo</td>
+			<td>Temitope</td>
+		</tr>
+
+		<tr>
+			<th>Genders</th>
+			<td>Male</td>
+			<td>Female</td>
+			<td>Male</td>
+			<td>Trans</td>
+		</tr>
+
+
+	</table><br><br>
+
+		<table class=second style="width: 100%;">
+			<tbody>
+				<tr>
+					<th>Matric</th>
+					<th>Names</th>
+					<th>Gender</th>
+				</tr>
+
+				<tr>
+					<td>001</td>
+					<td>Ezekiel</td>
+					<td>Male</td>
+				</tr>
+
+				<tr>
+					<td>002</td>
+					<td>Emmanuel</td>
+					<td>Male</td>
+				</tr>
+
+				<tr>
+					<td>003</td>
+					<td>Tope</td>
+					<td>Trans</td>
+				</tr>
+			</tbody>
+
+
+		
+		</table><br><br>
+
+	<table class="third" style="width: 100%;">
+
+	<tr>
+		<th>Time</th>
+		<td>8:00-8:40am</td>
+		<td>8:40-9:20am</td>
+		<td>9:20-10:00am</td>
+	</tr>
+
+	<tr class="green">
+		<th>Monday</th>
+		<td>Math</td>
+		<td>Quantitative Reasoning</td>
+		<td>Spelling Bee</td>
+	</tr>
+
+	<tr>
+		<th>Tuesday</th>
+		<td>Verbal Reasoning</td>
+		<td>Language</td>
+		<td>Home Econs</td>
+	</tr>
+
+	<tr class="green">
+		<th>Wednesday</th>
+		<td>Sports</td>
+		<td>Math</td>
+		<td>Religion</td>
+	</tr>
+
+	<tr>
+		<th>Thursday</th>
+		<td>Dining</td>
+		<td>Science Laboratory</td>
+		<td rowspan="2">Party</td>
+	</tr>
+
+	<tr class="green">
+		<th>Friday</th>
+		<td>Counselling</td>
+		<td>Biology</td>
+		<td></td>
+
+	</tr>
+	</table>
+</body>
+</html>

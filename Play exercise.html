@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Playexercise.html</title>
+</head>
+<body>
+<header>
+<h1>List of content</h1>
+
+	<p><strong>Fill the following accordingly;</strong></p>
+
+	<ul>
+		<li><a href="#personal">Personal info</a></li>
+		<li><a href="#school">School info</a></li>
+		<li><a href="#job">Job info(previous)</a></li>
+		<li><a href="#more">More info</a></li>
+	</ul><br>
+</header>
+
+
+<main>
+<h2>Please note the following:</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3 id="personal">Personal info</h3>
+
+	<form action="TRAILBLAZER" method="post">
+		<label for="name title">First name:</label>
+		<input type="text" name="Personal details" list="titlename" id="name title"><br>
+		<datalist id="titlename">
+			<option value="Mr"></option>
+			<option value="Miss"></option>
+			<option value="Mrs"></option>
+		</datalist>
+
+		<label for="surname">Surname:</label>
+		<input type="text" name="Personal details" value="last name" id="surname"><br>
+
+		<label for="age">Age:</label>
+		<input type="number" name="Personal details" value="age number" id="age" step="1" min="18" max="60"><br>
+
+		<label for="sex">Gender:</label>
+		<select id="sex" name="gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="transgender">Transgender</option>
+		</select>
+	</form>
+
+<h3 id="school">School info</h3>
+	<form action="TRAILBLAZER" method="post">
+		<p><em>Certificates attained:</em></p>
+		<label for="certificate">School leaving</label>
+		<input type="checkbox" name="School details" value="certificates attained" id="certificate"><br>
+
+		<label for="certificate">B.sc</label>
+		<input type="checkbox" name="School details" value="certificates attained" id="certificate"><br>
+
+		<label for="certificate">M.sc</label>
+		<input type="checkbox" name="School details" value="certificates attained" id="certificate"><br>
+
+		<label for="certificate">Doctorate</label>
+		<input type="checkbox" name="School details" value="certificates attained" id="certificate"><br><br>
+
+		<p><em>University kind:</em></p>
+		<label for="public university">Public University:</label>
+		<input type="radio" name="School details" value="university(public/private)" id="public university">
+
+		<label for="private university">Private University</label>
+		<input type="radio" name="School details" value="university(public/private)" id="private university">
+	</form>
+
+<h3 id="job">Job info</h3>
+	<form action="TRAILBLAZER" method="post">
+		<label for="past jobs">Previous job(s):</label>
+		<input type="text" name="Job details" value="past jobs" id="past jobs"><br>
+
+		<label for="position">Position seeking:</label>
+		<input type="text" name="Job details" value="position applied for" id="position"><br>
+
+		<label for="job experience">Years in job experience:</label>
+		<input type="text" name="Job details" value="past experience years" id="job experience"><br>
+
+		<label for="work enviroment">Preferred working enviroment:</label><br>
+		<span>Home</span>
+		<input type="range" name="School details" step="50" min="0" max="50" id="work enviroment">
+		<span>Work</span>
+	</form>
+
+	
+<h3 id="more">More info</h3>
+	<form action="TRAILBLAZER" method="post">
+		<label for="hobbies">Hobbies/Interests:</label>
+		<input type="text" name="More details" value="hobby" id="hobbies"
+		minlength="3" maxlength="50"><br><br>	
+
+		<label for="give more details"><em>Any more details:</em></label><br>	
+		<textarea name="More details" id="give more details" rows="5" cols="30">Any more info we should know?</textarea><br>	
+
+		<input type="submit" value="Send">
+	</form>
+</main>
+
+
+<footer>
+	<h3>Signup to Account</h3>
+	<label for="username">Type username:</label>
+	<input type="text" name="username" id="username"><br>
+
+	<label for="password">Type password:</label>
+	<input type="password" name="password" id="password"><br>
+
+	<label for="verify password">Verify password:</label>
+	<input type="password" name="password" id="verify password">
+</footer>
+</body>
+</html>
