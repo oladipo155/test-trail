@@ -4,15 +4,52 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Html forms</title>
+	<script type="text/javascript">
+		const greeting = function(){
+			alert('Thank you for banking with us!');
+		}
+	function myFunction() {
+		var x = document.getElementById("myInput");
+		if (x.type === "password") {
+			x.type = "text";
+		} else {
+			x.type = "password";
+		}
+	}
+	
+	</script>
+	<style type="text/css">
+		body{
+			background-image: url(img/ani-4.jpg);
+			background-size: 85%;
+		}
+	h1, h2{
+		background-color: #efefef;
+	}
+
+	.bio{ 
+        margin-bottom: 10px;
+        border-radius: ;   
+	}
+
+	.fi{
+		border-radius: 10px;
+	}
+	</style>
 </head>
 <body>
-	<form action="https://www.torilo.co.uk/student-info.js" novalidate autocomplete="on" method="POST">
+	<form action="https://www.torilo.co.uk/student-info.js" novalidate autocomplete="on" method="POST" oninput="x.value=parseInt(a.value) - parseInt(b.value)">
+
 		<h2>Torilo Student Registration</h2>
-		<h3>Bio</h3>
-		<label>First name: </label>
-		<input type="text" name="fn" id="first"><br>
-		<label>Last name: </label>
-		<input type="text" name="ln" id="last"><br>
+		<fieldset>
+		<legend>Bio</legend>
+		<label for="first">First name: </label>
+		<input class= "bio fi" type="text" name="fn" id="first"><br>
+		<label for="last">Last name: </label>
+		<input class= "bio fi" type="text" name="ln" id="last"><br>
+		<label for="dob">Time of Birth: </label>
+		<input class= "bio fi" type="datetime-local" name="" id="dob">
+		<br><br>
 		<span>Gender: </span>
 		<input type="radio" name="gender" id="male" value="male">
 		<label for="male">Male</label>
@@ -20,8 +57,10 @@
 		<label for="female">Female</label>
 		<input type="radio" name="gender" id="agender" value="agender">
 		<label for="agender">Agender</label><br>
+		</fieldset>
 		<br><br>
-		<h3>How many dependants do you have?</h3>
+		<fieldset>
+		<legend>How many dependants do you have?</legend>
 		<label for="one">1</label>
 		<input type="checkbox" name="dependant" id="one" value="1">
 		<label for="two">2</label>
@@ -32,8 +71,8 @@
 		<input type="checkbox" name="dependant" id="more" value=">3">
 		<br><br>
 		<label>Email: </label>
-		<input type="email" name=""><br>
-		<input type="submit">
+		<input type="email" name="" class="fi"><br>
+		
 		
 		<h3>Choose your blood group: </h3>
 		<label for="bg">Blood Groups: </label>
@@ -44,6 +83,44 @@
 			<option value="4">B+</option>
 			<option value="5">JS</option>
 		</select>
+	</fieldset>s
+		<br>
+
+	<fieldset>
+		<legend>Tell us a little about yourself</legend>
+		<label for="ta">Write here: </label><textarea id="ta" name="about" rows="10" cols="20" class="fi"></textarea>
+		<br><br>
+		<h4>What is your favorite food?</h4>
+	<datalist id="food" class="fi">
+			<option value="Amala">
+			<option value="Oporopo">
+			<option value="Tuwo Shinkafi">
+			<option value="Eba">
+	</datalist>
+	<input list="food">
+	</fieldset>
+		
+	<fieldset>
+		<legend>Calculations</legend>
+		<label id="a">Your income</label>
+		<input type="range" name="a" id="a" value="50">
+		<label id="b">Your expenses</label>
+		<input type="range" name="b" id="b" value="50">=
+		<output name="x" for="a b"></output>
+		<h3>Create a username and password</h3>
+		<label for="username">Username</label>
+		<input type="text" name="" id="username" class=fi>
+
+		<label for="myInput">Password</label>
+		<input type="password" id="myInput" class="fi">
+		<input type="checkbox" onclick="myFunction()">Show Password
+	</fieldset>
+
+	<label for="reset">Reset your inputs:</label>
+	<input type="reset" name="reset"><br>
+	<button onclick="greeting()">Submit </button>
+	<!-- <input type="submit"> -->
+		
 	</form>
 </body>
 </html>
